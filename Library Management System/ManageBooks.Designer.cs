@@ -1,6 +1,6 @@
 ﻿namespace Library_Management_System
 {
-    partial class ManageBooks
+    partial class Managebooks
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.Title = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -36,26 +36,28 @@
             this.txtAuthor = new System.Windows.Forms.TextBox();
             this.txtGenre = new System.Windows.Forms.TextBox();
             this.txtISBN = new System.Windows.Forms.TextBox();
-            this.addBtn = new System.Windows.Forms.Button();
-            this.editBtn = new System.Windows.Forms.Button();
-            this.Deletebtn = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.dgvBooks = new System.Windows.Forms.DataGridView();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // Title
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(90, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Title";
+            this.Title.AutoSize = true;
+            this.Title.Location = new System.Drawing.Point(239, 46);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(38, 20);
+            this.Title.TabIndex = 0;
+            this.Title.Text = "Title";
+            this.Title.Click += new System.EventHandler(this.Title_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(253, 47);
+            this.label2.Location = new System.Drawing.Point(239, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 1;
@@ -64,7 +66,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(441, 47);
+            this.label3.Location = new System.Drawing.Point(239, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 20);
             this.label3.TabIndex = 2;
@@ -73,7 +75,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(648, 47);
+            this.label4.Location = new System.Drawing.Point(239, 175);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 20);
             this.label4.TabIndex = 3;
@@ -81,82 +83,97 @@
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(38, 82);
+            this.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTitle.Location = new System.Drawing.Point(360, 40);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(149, 26);
+            this.txtTitle.Size = new System.Drawing.Size(189, 26);
             this.txtTitle.TabIndex = 4;
             // 
             // txtAuthor
             // 
-            this.txtAuthor.Location = new System.Drawing.Point(224, 82);
+            this.txtAuthor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAuthor.Location = new System.Drawing.Point(360, 82);
             this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.Size = new System.Drawing.Size(149, 26);
+            this.txtAuthor.Size = new System.Drawing.Size(189, 26);
             this.txtAuthor.TabIndex = 5;
             // 
             // txtGenre
             // 
-            this.txtGenre.Location = new System.Drawing.Point(404, 82);
+            this.txtGenre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGenre.Location = new System.Drawing.Point(360, 127);
             this.txtGenre.Name = "txtGenre";
-            this.txtGenre.Size = new System.Drawing.Size(149, 26);
+            this.txtGenre.Size = new System.Drawing.Size(189, 26);
             this.txtGenre.TabIndex = 6;
             // 
             // txtISBN
             // 
-            this.txtISBN.Location = new System.Drawing.Point(615, 82);
+            this.txtISBN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtISBN.Location = new System.Drawing.Point(360, 169);
             this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(149, 26);
+            this.txtISBN.Size = new System.Drawing.Size(189, 26);
             this.txtISBN.TabIndex = 7;
             // 
-            // addBtn
+            // btnAdd
             // 
-            this.addBtn.Location = new System.Drawing.Point(198, 156);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(84, 67);
-            this.addBtn.TabIndex = 8;
-            this.addBtn.Text = "Add";
-            this.addBtn.UseVisualStyleBackColor = true;
-            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            this.btnAdd.Location = new System.Drawing.Point(667, 26);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(115, 60);
+            this.btnAdd.TabIndex = 8;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // editBtn
+            // btnEdit
             // 
-            this.editBtn.Location = new System.Drawing.Point(395, 156);
-            this.editBtn.Name = "editBtn";
-            this.editBtn.Size = new System.Drawing.Size(84, 67);
-            this.editBtn.TabIndex = 9;
-            this.editBtn.Text = "Edit";
-            this.editBtn.UseVisualStyleBackColor = true;
-            this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
+            this.btnEdit.Location = new System.Drawing.Point(667, 109);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(115, 60);
+            this.btnEdit.TabIndex = 9;
+            this.btnEdit.Text = "Save";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // Deletebtn
+            // btnDelete
             // 
-            this.Deletebtn.Location = new System.Drawing.Point(615, 156);
-            this.Deletebtn.Name = "Deletebtn";
-            this.Deletebtn.Size = new System.Drawing.Size(84, 67);
-            this.Deletebtn.TabIndex = 10;
-            this.Deletebtn.Text = "Delete";
-            this.Deletebtn.UseVisualStyleBackColor = true;
-            this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
+            this.btnDelete.Location = new System.Drawing.Point(667, 189);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(115, 60);
+            this.btnDelete.TabIndex = 10;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // dgvBooks
             // 
             this.dgvBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBooks.Location = new System.Drawing.Point(12, 251);
+            this.dgvBooks.Location = new System.Drawing.Point(12, 269);
             this.dgvBooks.Name = "dgvBooks";
             this.dgvBooks.RowHeadersWidth = 62;
             this.dgvBooks.RowTemplate.Height = 28;
-            this.dgvBooks.Size = new System.Drawing.Size(1086, 187);
+            this.dgvBooks.Size = new System.Drawing.Size(840, 169);
             this.dgvBooks.TabIndex = 11;
-            this.dgvBooks.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBooks_CellClick);
+            this.dgvBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBooks_CellContentClick);
             // 
-            // ManageBooks
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(31, 26);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(106, 61);
+            this.btnBack.TabIndex = 12;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // Managebooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1144, 450);
+            this.ClientSize = new System.Drawing.Size(864, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dgvBooks);
-            this.Controls.Add(this.Deletebtn);
-            this.Controls.Add(this.editBtn);
-            this.Controls.Add(this.addBtn);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtISBN);
             this.Controls.Add(this.txtGenre);
             this.Controls.Add(this.txtAuthor);
@@ -164,10 +181,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "ManageBooks";
-            this.Text = "Manage_Books";
-            this.Load += new System.EventHandler(this.ManageBooks_Load);
+            this.Controls.Add(this.Title);
+            this.Name = "Managebooks";
+            this.Text = "Managebooks";
+            this.Load += new System.EventHandler(this.Managebooks_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,7 +193,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -184,9 +201,10 @@
         private System.Windows.Forms.TextBox txtAuthor;
         private System.Windows.Forms.TextBox txtGenre;
         private System.Windows.Forms.TextBox txtISBN;
-        private System.Windows.Forms.Button addBtn;
-        private System.Windows.Forms.Button editBtn;
-        private System.Windows.Forms.Button Deletebtn;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dgvBooks;
+        private System.Windows.Forms.Button btnBack;
     }
 }

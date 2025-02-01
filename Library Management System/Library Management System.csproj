@@ -101,6 +101,18 @@
     <Compile Include="Book.cs" />
     <Compile Include="BookManager.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="CustomerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerLogin.Designer.cs">
+      <DependentUpon>CustomerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMenu.Designer.cs">
+      <DependentUpon>CustomerMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,14 @@
     <Compile Include="ManageBooks.Designer.cs">
       <DependentUpon>ManageBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMember.Designer.cs">
+      <DependentUpon>ManageMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs" />
+    <Compile Include="MemberManager.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +141,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,12 +149,26 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User.cs" />
+=======
+>>>>>>> 4195d369575cc78e7434264168e33306f65b9e17
     <Compile Include="UserController.cs" />
+    <Compile Include="UserMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMode.Designer.cs">
+      <DependentUpon>UserMode.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomerLogin.resx">
+      <DependentUpon>CustomerLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageBooks.resx">
       <DependentUpon>ManageBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageMember.resx">
+      <DependentUpon>ManageMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -146,7 +181,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserMode.resx">
+      <DependentUpon>UserMode.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -160,6 +199,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libraries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,9 +19,9 @@ namespace Library_Management_System
 
         private void bookbtn_Click(object sender, EventArgs e)
         {
-            // Open the main library management form
-            //ManageBooks manageBooks = new ManageBooks();
-            //manageBooks.Show();
+            //Open the main library management form
+            Managebooks manageBooks = new Managebooks();
+            manageBooks.Show();
 
 
             // Hide the login form
@@ -31,6 +31,42 @@ namespace Library_Management_System
         private void Menu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void memberbtn_Click(object sender, EventArgs e)
+        {
+            // Open the ManageMember form
+            ManageMember manageMember = new ManageMember();
+            manageMember.Show();
+
+            // Optionally, hide the current Menu form
+            this.Hide();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            // Show a confirmation dialog before logging out
+            var confirmResult = MessageBox.Show(
+                "Are you sure you want to log out?",
+                "Confirm Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            // Check user's response
+            if (confirmResult == DialogResult.Yes)
+            {
+                // If user confirms, show the login form
+                UserMode userselect = new UserMode();
+                userselect.Show();
+
+                // Close the current form
+                this.Close();
+            }
+            else
+            {
+                // If user cancels, do nothing
+                MessageBox.Show("Logout canceled.", "Action Canceled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

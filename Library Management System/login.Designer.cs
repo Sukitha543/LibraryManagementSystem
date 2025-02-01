@@ -34,6 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pwd = new System.Windows.Forms.TextBox();
             this.btn1 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -98,12 +99,22 @@
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(44, 27);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(119, 60);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(983, 424);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.pwd);
             this.Controls.Add(this.label3);
@@ -126,6 +137,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox pwd;
         private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btnBack;
     }
 }
 

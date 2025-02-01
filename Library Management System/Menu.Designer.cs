@@ -32,13 +32,14 @@
             this.memberbtn = new System.Windows.Forms.Button();
             this.borrowbtn = new System.Windows.Forms.Button();
             this.reservebtn = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bookbtn
             // 
             this.bookbtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.bookbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookbtn.Location = new System.Drawing.Point(443, 83);
+            this.bookbtn.Location = new System.Drawing.Point(443, 109);
             this.bookbtn.Name = "bookbtn";
             this.bookbtn.Size = new System.Drawing.Size(252, 119);
             this.bookbtn.TabIndex = 0;
@@ -50,18 +51,19 @@
             // 
             this.memberbtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.memberbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memberbtn.Location = new System.Drawing.Point(132, 83);
+            this.memberbtn.Location = new System.Drawing.Point(132, 109);
             this.memberbtn.Name = "memberbtn";
             this.memberbtn.Size = new System.Drawing.Size(252, 119);
             this.memberbtn.TabIndex = 1;
             this.memberbtn.Text = "Manage Members";
             this.memberbtn.UseVisualStyleBackColor = false;
+            this.memberbtn.Click += new System.EventHandler(this.memberbtn_Click);
             // 
             // borrowbtn
             // 
             this.borrowbtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.borrowbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.borrowbtn.Location = new System.Drawing.Point(132, 233);
+            this.borrowbtn.Location = new System.Drawing.Point(132, 259);
             this.borrowbtn.Name = "borrowbtn";
             this.borrowbtn.Size = new System.Drawing.Size(252, 119);
             this.borrowbtn.TabIndex = 2;
@@ -72,12 +74,22 @@
             // 
             this.reservebtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.reservebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reservebtn.Location = new System.Drawing.Point(443, 233);
+            this.reservebtn.Location = new System.Drawing.Point(443, 259);
             this.reservebtn.Name = "reservebtn";
             this.reservebtn.Size = new System.Drawing.Size(252, 119);
             this.reservebtn.TabIndex = 3;
             this.reservebtn.Text = "Manage Reservations";
             this.reservebtn.UseVisualStyleBackColor = false;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(23, 29);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(86, 40);
+            this.btnLogout.TabIndex = 4;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // Menu
             // 
@@ -85,6 +97,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.reservebtn);
             this.Controls.Add(this.borrowbtn);
             this.Controls.Add(this.memberbtn);
@@ -102,5 +115,6 @@
         private System.Windows.Forms.Button memberbtn;
         private System.Windows.Forms.Button borrowbtn;
         private System.Windows.Forms.Button reservebtn;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

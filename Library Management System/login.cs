@@ -61,5 +61,13 @@ namespace Library_Management_System
             }
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            UserMode UserSelection = new UserMode();
+            UserSelection.Show();
+
+            this.Hide();
+        }
     }
 }

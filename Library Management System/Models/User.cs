@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library_Management_System
 {
-    public abstract class User
+    public abstract class User //Base class for inheritance
     {
         public int UserId { get; set; }
         public string FirstName { get; set; }

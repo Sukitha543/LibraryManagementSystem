@@ -130,6 +130,7 @@
     <Compile Include="Interfaces\ManageMember.Designer.cs">
       <DependentUpon>ManageMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Librarian.cs" />
     <Compile Include="Models\Member.cs" />
     <Compile Include="Models\MemberManager.cs" />
     <Compile Include="Interfaces\Menu.cs">

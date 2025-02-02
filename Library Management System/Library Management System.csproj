@@ -98,6 +98,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\AccessLevel.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\BookManager.cs" />
     <Compile Include="Interfaces\CustomerLogin.cs">

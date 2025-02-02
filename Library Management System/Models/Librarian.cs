@@ -10,7 +10,11 @@ namespace Library_Management_System.Models
     {
         public string StaffId { get; set; }
         public string Department { get; set; }
-        public AccessLevel SecurityClearance { get; set; }
         public DateTime HireDate { get; set; }
+
+        public Librarian()
+        {
+            AccessLevel = AccessLevel.Administrator; 
+        }
     }
 }

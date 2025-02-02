@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library_Management_System.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,7 @@ namespace Library_Management_System
         public string Password { get; protected set; }
         public DateTime CreatedAt { get; set; }
         public bool IsActive { get; set; }
+        public AccessLevel AccessLevel { get; set; }
     }
 
 }

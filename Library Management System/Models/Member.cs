@@ -6,26 +6,17 @@ using System.Threading.Tasks;
 
 namespace Library_Management_System
 {
-    internal class Member
+    public class Member : User // Inheriting from user
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public string Telephone { get; set; }
-        public string Password { get; set; }
-
-
-        public Member(int id, string name, string address, string telephone, string password)
-        {
-            Id = id;
-            Name = name;
-            Address = address;
-            Telephone = telephone;
-            Password = password;
-        }
-
-
-        public Member() { }
+        public string MembershipId { get; set; }
+        public MembershipType MembershipType { get; set; }
+        public DateTime MembershipStartDate { get; set; }
+        public DateTime MembershipEndDate { get; set; }
+        public decimal OutstandingFines { get; set; }
+        public bool IsBlacklisted { get; set; }
+        public List<BorrowingRecord> BorrowingHistory { get; set; }
+        public List<Reservation> Reservations { get; set; }
     }
+
 }
 

@@ -9,8 +9,6 @@ namespace Library_Management_System.Models
     public enum AccessLevel
     {
         Basic,
-        Intermediate,
-        Advanced,
         Administrator
     }
 }

@@ -1,0 +1,105 @@
+[33mcommit ed6ea2a6a01d94115ef30685efa0039874109cb0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature[m[33m)[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sun Feb 2 09:06:43 2025 +0530
+
+    Updated the UserController
+
+[33mcommit 215f7c4238b8c910f702617919e1071fe72f2699[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sun Feb 2 08:59:32 2025 +0530
+
+    Made the interface that supports the updating of and adding of members , managing of fines for overdue books
+
+[33mcommit cf075d82b4b32da6fb72edc10b7b0186a6e0ee6b[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sun Feb 2 08:34:50 2025 +0530
+
+    Added another class in Membership creating file inorder to update members current record
+
+[33mcommit 6acbfec970965d72e4cf91c9c8bb5d4f518b3624[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sun Feb 2 08:32:30 2025 +0530
+
+    Made a class for creation of Members
+
+[33mcommit 91404a9218635effd4415776256922834d441659[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sun Feb 2 08:22:24 2025 +0530
+
+    Made a new class for the type of Membership a member could have
+
+[33mcommit 0b77449da089bafed8ad175f40e4258960e7fb44[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sun Feb 2 08:17:50 2025 +0530
+
+    Made a new class for AccessLevel
+
+[33mcommit f8b97cd994acc4ff4d5056c7f0791210063a5778[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sun Feb 2 08:11:40 2025 +0530
+
+    Made new Member class
+
+[33mcommit 46f65ad55542fb88b4106213f082f2e967efdc90[m[33m ([m[1;31morigin/feature[m[33m)[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sun Feb 2 08:03:47 2025 +0530
+
+    Added Librarian class and comments
+
+[33mcommit 6e35edc3ddca942cd49fb08c49fcbedcdc94cc1b[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sun Feb 2 07:58:41 2025 +0530
+
+    Removed Class1.cs
+    Added new class User.cs
+
+[33mcommit 32f27ba8c1dd639e47383237264b1230f803e6b1[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sun Feb 2 07:44:40 2025 +0530
+
+    Organised the files according to the MVC structure
+
+[33mcommit 1de7d35c443028854fff2d4a9dd3168a7afebba5[m
+Merge: 1c31ec1 4195d36
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sat Feb 1 21:10:06 2025 +0530
+
+    bugfix: Update Program.cs
+
+[33mcommit 1c31ec16c6b9fdc3b7a83e093301a217836f4e3b[m
+Author: Zahid-101 <zahidwork908@gmail.com>
+Date:   Sat Feb 1 20:36:08 2025 +0530
+
+    Added some adjustments for a registration form for members
+    made a new page to select between resgistration or logging in
+    Edited the program.cs file to switch into the new page
+
+[33mcommit 4195d369575cc78e7434264168e33306f65b9e17[m
+Author: Sukitha Chathuranga Hettimudalige <sukithachathuranga@gmail.com>
+Date:   Sat Feb 1 20:33:54 2025 +0530
+
+    Added new classes and forms
+
+[33mcommit dda9cf62d5e1057d296f07ff730590d404c7a6ed[m
+Author: Sukitha Chathuranga Hettimudalige <sukithachathuranga@gmail.com>
+Date:   Fri Jan 31 23:58:45 2025 +0530
+
+    Removed unused files and refactored the code
+
+[33mcommit 04d93331ed1f843a25e17cca6fb707eb0e65bbd6[m
+Author: Sukitha Chathuranga Hettimudalige <126680087+Sukitha543@users.noreply.github.com>
+Date:   Fri Jan 31 15:37:17 2025 +0530
+
+    Add files via upload
+
+[33mcommit a8b437cabcb5c38d62d234d1e0f537ba503263bc[m
+Author: Sukitha Chathuranga Hettimudalige <sukithachathuranga@gmail.com>
+Date:   Fri Jan 31 15:04:34 2025 +0530
+
+    Add project files.
+
+[33mcommit 07fdaa5ac53bc1af074d1a3de9c6a7b4e3c447cf[m
+Author: Sukitha Chathuranga Hettimudalige <sukithachathuranga@gmail.com>
+Date:   Fri Jan 31 15:04:31 2025 +0530
+
+    Add .gitattributes, .gitignore, and README.md.

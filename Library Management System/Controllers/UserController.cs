@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Library_Management_System.Models;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,47 +11,39 @@ using System.Windows.Input;
 namespace Library_Management_System
 {
     public class UserController
-   
     {
-        string connectionString = "Server=localhost;Database=libraryDB;Uid=root;Pwd=;";
-        public bool UserAuth(string username, string password)
+        private readonly IUserRepository _userRepository;
+        private readonly ILogger<UserController> _logger;
+
+        public UserController(IUserRepository userRepository, ILogger<UserController> logger)
         {
-            
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = "SELECT COUNT(*) FROM Users WHERE Username = @Username AND Password = @Password";
-
-                using (var command = new MySqlCommand(query, conn))
-                {
-                   command.Parameters.AddWithValue("@Username", username);
-                   command.Parameters.AddWithValue("@password", password);
-
-                    int userCount = Convert.ToInt32(command.ExecuteScalar());
-                    return userCount > 0;
-                }
-            }
+            _userRepository = userRepository;
+            _logger = logger;
         }
 
-          // Method for customer authentication (username is fixed as "customer")
-        public bool CustomerAuth(string password, string name)
+        public async Task<ActionResult<Member>> CreateMember(MemberCreateDto memberDto)
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = "SELECT COUNT(*) FROM Members WHERE Name = @Name AND Password = @Password";
+           
+        }
 
-                using (var command = new MySqlCommand(query, conn))
-                {
-                    command.Parameters.AddWithValue("@Password", password);
-                    command.Parameters.AddWithValue("@Name", name);
+        public async Task<ActionResult<Member>> UpdateMember(int id, MemberUpdateDto memberDto)
+        {
+           
+        }
 
+        public async Task<ActionResult<Librarian>> CreateLibrarian(LibrarianCreateDto librarianDto)
+        {
+           
+        }
 
+        public async Task<ActionResult> DeactivateUser(int userId)
+        {
+           
+        }
 
-                    int userCount = Convert.ToInt32(command.ExecuteScalar());
-                    return userCount > 0;
-                }
-            }
+        public async Task<ActionResult<List<Member>>> GetOverdueMembersWithFines()
+        {
+           
         }
     }
 }

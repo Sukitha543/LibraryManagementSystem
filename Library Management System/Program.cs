@@ -16,11 +16,7 @@ namespace Library_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new Form1());
-=======
             Application.Run(new UserMode());
->>>>>>> 4195d369575cc78e7434264168e33306f65b9e17
         }
     }
 }

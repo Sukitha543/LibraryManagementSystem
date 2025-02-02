@@ -98,69 +98,69 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Book.cs" />
-    <Compile Include="BookManager.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="CustomerLogin.cs">
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\BookManager.cs" />
+    <Compile Include="Interfaces\CustomerLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerLogin.Designer.cs">
+    <Compile Include="Interfaces\CustomerLogin.Designer.cs">
       <DependentUpon>CustomerLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerMenu.cs">
+    <Compile Include="Interfaces\CustomerMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerMenu.Designer.cs">
+    <Compile Include="Interfaces\CustomerMenu.Designer.cs">
       <DependentUpon>CustomerMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="login.cs">
+    <Compile Include="Interfaces\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
+    <Compile Include="Interfaces\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageBooks.cs">
+    <Compile Include="Interfaces\ManageBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManageBooks.Designer.cs">
+    <Compile Include="Interfaces\ManageBooks.Designer.cs">
       <DependentUpon>ManageBooks.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageMember.cs">
+    <Compile Include="Interfaces\ManageMember.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManageMember.Designer.cs">
+    <Compile Include="Interfaces\ManageMember.Designer.cs">
       <DependentUpon>ManageMember.cs</DependentUpon>
     </Compile>
-    <Compile Include="Member.cs" />
-    <Compile Include="MemberManager.cs" />
-    <Compile Include="Menu.cs">
+    <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\MemberManager.cs" />
+    <Compile Include="Interfaces\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
+    <Compile Include="Interfaces\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserController.cs" />
-    <Compile Include="UserMode.cs">
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Interfaces\UserMode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserMode.Designer.cs">
+    <Compile Include="Interfaces\UserMode.Designer.cs">
       <DependentUpon>UserMode.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CustomerLogin.resx">
+    <Compile Include="Models\User.cs" />
+    <EmbeddedResource Include="Interfaces\CustomerLogin.resx">
       <DependentUpon>CustomerLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
+    <EmbeddedResource Include="Interfaces\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManageBooks.resx">
+    <EmbeddedResource Include="Interfaces\ManageBooks.resx">
       <DependentUpon>ManageBooks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManageMember.resx">
+    <EmbeddedResource Include="Interfaces\ManageMember.resx">
       <DependentUpon>ManageMember.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
+    <EmbeddedResource Include="Interfaces\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -173,7 +173,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserMode.resx">
+    <EmbeddedResource Include="Interfaces\UserMode.resx">
       <DependentUpon>UserMode.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

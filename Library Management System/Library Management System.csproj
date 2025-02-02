@@ -133,6 +133,7 @@
     </Compile>
     <Compile Include="Models\IUserRepository.cs" />
     <Compile Include="Models\Librarian.cs" />
+    <Compile Include="Models\LibraryAuthorizationHandler.cs" />
     <Compile Include="Models\Member.cs" />
     <Compile Include="Models\MemberCreateDTO.cs" />
     <Compile Include="Models\MemberManager.cs" />

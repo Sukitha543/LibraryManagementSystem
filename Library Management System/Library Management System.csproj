@@ -98,88 +98,64 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\AccessLevel.cs" />
-    <Compile Include="Models\Book.cs" />
-    <Compile Include="Models\BookManager.cs" />
-    <Compile Include="Interfaces\CustomerLogin.cs">
+    <Compile Include="Model\Book.cs" />
+    <Compile Include="BookManager.cs" />
+    <Compile Include="Model\Borrow.cs" />
+    <Compile Include="forms\BorrowBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\CustomerLogin.Designer.cs">
+    <Compile Include="forms\BorrowBooks.Designer.cs">
+      <DependentUpon>BorrowBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowManager.cs" />
+    <Compile Include="forms\CustomerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\CustomerLogin.Designer.cs">
       <DependentUpon>CustomerLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\CustomerMenu.cs">
+    <Compile Include="forms\CustomerMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\CustomerMenu.Designer.cs">
+    <Compile Include="forms\CustomerMenu.Designer.cs">
       <DependentUpon>CustomerMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\login.cs">
+    <Compile Include="forms\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\login.Designer.cs">
+    <Compile Include="forms\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\ManageBooks.cs">
+    <Compile Include="forms\ManageBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\ManageBooks.Designer.cs">
+    <Compile Include="forms\ManageBooks.Designer.cs">
       <DependentUpon>ManageBooks.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\ManageMember.cs">
+    <Compile Include="forms\ManageBorrowings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\ManageMember.Designer.cs">
+    <Compile Include="forms\ManageBorrowings.Designer.cs">
+      <DependentUpon>ManageBorrowings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ManageMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ManageMember.Designer.cs">
       <DependentUpon>ManageMember.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\IUserRepository.cs" />
-    <Compile Include="Models\Librarian.cs" />
-    <Compile Include="Models\LibraryAuthorizationHandler.cs" />
-    <Compile Include="Models\Member.cs" />
-    <Compile Include="Models\MemberCreateDTO.cs" />
-    <Compile Include="Models\MemberManager.cs" />
-    <Compile Include="Interfaces\Menu.cs">
+    <Compile Include="forms\ManageReservations.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="forms\ManageReservations.Designer.cs">
+      <DependentUpon>ManageReservations.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\UserOperations.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\UserController.cs" />
-    <Compile Include="Interfaces\UserMode.cs">
+    <Compile Include="Model\Member.cs" />
+    <Compile Include="MemberManager.cs" />
+    <Compile Include="forms\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\UserMode.Designer.cs">
-      <DependentUpon>UserMode.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\User.cs" />
-    <EmbeddedResource Include="Interfaces\CustomerLogin.resx">
-      <DependentUpon>CustomerLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaces\login.resx">
-      <DependentUpon>login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaces\ManageBooks.resx">
-      <DependentUpon>ManageBooks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaces\ManageMember.resx">
-      <DependentUpon>ManageMember.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaces\Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="Interfaces\UserMode.resx">
+    <Compile Include="forms\Menu.Designer.cs">
       <DependentUpon>UserMode.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

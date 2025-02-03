@@ -9,7 +9,7 @@ using System.Windows.Input;
 
 namespace Library_Management_System
 {
-    public class UserController
+    internal class UserManager
    
     {
         string connectionString = "Server=localhost;Database=libraryDB;Uid=root;Pwd=;";

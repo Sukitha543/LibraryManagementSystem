@@ -51,6 +51,7 @@
             this.btnReserveBook.TabIndex = 1;
             this.btnReserveBook.Text = "Reserve Book";
             this.btnReserveBook.UseVisualStyleBackColor = true;
+            this.btnReserveBook.Click += new System.EventHandler(this.btnReserveBook_Click);
             // 
             // btnLogOut
             // 
@@ -72,6 +73,7 @@
             this.Controls.Add(this.btnBorrow);
             this.Name = "CustomerMenu";
             this.Text = "CustomerMenu";
+            this.Load += new System.EventHandler(this.CustomerMenu_Load);
             this.ResumeLayout(false);
 
         }

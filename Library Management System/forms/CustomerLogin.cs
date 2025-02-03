@@ -13,11 +13,11 @@ namespace Library_Management_System
     
     public partial class CustomerLogin : Form
     {
-        private UserController userController;
+        UserManager userController = new UserManager();
         public CustomerLogin()
         {
             InitializeComponent();
-            userController = new UserController(); // Initialize UserController instance
+            
 
         }
 

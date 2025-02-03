@@ -12,7 +12,7 @@ namespace Library_Management_System
 {
     public partial class login : Form
     {
-        private UserController usercontroller = new UserController();
+         UserManager usercontroller = new UserManager();
         public login()
         {
             InitializeComponent();

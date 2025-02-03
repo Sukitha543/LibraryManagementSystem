@@ -69,6 +69,7 @@
             this.borrowbtn.TabIndex = 2;
             this.borrowbtn.Text = "Manage Borrowings";
             this.borrowbtn.UseVisualStyleBackColor = false;
+            this.borrowbtn.Click += new System.EventHandler(this.borrowbtn_Click);
             // 
             // reservebtn
             // 
@@ -80,6 +81,7 @@
             this.reservebtn.TabIndex = 3;
             this.reservebtn.Text = "Manage Reservations";
             this.reservebtn.UseVisualStyleBackColor = false;
+            this.reservebtn.Click += new System.EventHandler(this.reservebtn_Click);
             // 
             // btnLogout
             // 

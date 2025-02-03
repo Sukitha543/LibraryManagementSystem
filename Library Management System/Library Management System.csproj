@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -156,66 +156,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Model\Reservation.cs" />
-    <Compile Include="ReservationManager.cs" />
-    <Compile Include="forms\ReserveBooks.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\ReserveBooks.Designer.cs">
-      <DependentUpon>ReserveBooks.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserManager.cs" />
-    <Compile Include="forms\UserMode.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\UserMode.Designer.cs">
-      <DependentUpon>UserMode.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="forms\BorrowBooks.resx">
-      <DependentUpon>BorrowBooks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\CustomerLogin.resx">
-      <DependentUpon>CustomerLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\CustomerMenu.resx">
-      <DependentUpon>CustomerMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\login.resx">
-      <DependentUpon>login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\ManageBooks.resx">
-      <DependentUpon>ManageBooks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\ManageBorrowings.resx">
-      <DependentUpon>ManageBorrowings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\ManageMember.resx">
-      <DependentUpon>ManageMember.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\ManageReservations.resx">
-      <DependentUpon>ManageReservations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="forms\ReserveBooks.resx">
-      <DependentUpon>ReserveBooks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\UserMode.resx">
       <DependentUpon>UserMode.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

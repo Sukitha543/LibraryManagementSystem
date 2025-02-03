@@ -24,7 +24,7 @@ namespace Library_Management_System
                 using (MySqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
-                    {
+                    {    // Using the constructor to create a new Member object
                         members.Add(new Member(
                             reader.GetInt32("Id"),
                             reader.GetString("Name"),

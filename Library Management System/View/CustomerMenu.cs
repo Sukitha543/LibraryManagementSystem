@@ -10,40 +10,14 @@ using System.Windows.Forms;
 
 namespace Library_Management_System
 {
-    public partial class Menu : Form
+    public partial class CustomerMenu : Form
     {
-        public Menu()
+        public CustomerMenu()
         {
             InitializeComponent();
         }
 
-        private void bookbtn_Click(object sender, EventArgs e)
-        {
-            //Open the main library management form
-            Managebooks manageBooks = new Managebooks();
-            manageBooks.Show();
-
-
-            // Hide the login form
-            this.Hide();
-        }
-
-        private void Menu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void memberbtn_Click(object sender, EventArgs e)
-        {
-            // Open the ManageMember form
-            ManageMember manageMember = new ManageMember();
-            manageMember.Show();
-
-            // Optionally, hide the current Menu form
-            this.Hide();
-        }
-
-        private void btnLogout_Click(object sender, EventArgs e)
+        private void btnLogOut_Click(object sender, EventArgs e)
         {
             // Show a confirmation dialog before logging out
             DialogResult confirmResult = MessageBox.Show(
@@ -56,8 +30,8 @@ namespace Library_Management_System
             if (confirmResult == DialogResult.Yes)
             {
                 // If user confirms, show the login form
-                UserMode userselect = new UserMode();
-                userselect.Show();
+                UserMode user = new UserMode();
+                user.Show();
 
                 // Close the current form
                 this.Close();
@@ -68,5 +42,33 @@ namespace Library_Management_System
                 MessageBox.Show("Logout canceled.", "Action Canceled", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btnBorrow_Click(object sender, EventArgs e)
+        {
+            //Open the main library management form
+            BorrowBooks borrow = new BorrowBooks();
+            borrow.Show();
+
+
+            // Hide the login form
+            this.Hide();
+        }
+
+        private void CustomerMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReserveBook_Click(object sender, EventArgs e)
+        {
+            //Open the main library management form
+            ReserveBooks reserve = new ReserveBooks();
+            reserve.Show();
+
+
+            // Hide the login form
+            this.Hide();
+        }
     }
+    
 }

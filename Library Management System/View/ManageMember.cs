@@ -12,7 +12,7 @@ namespace Library_Management_System
 {
     public partial class ManageMember : Form
     {
-        private MemberManager memberControl = new MemberManager();
+        MemberManager memberControl = new MemberManager();
 
         public ManageMember()
         {

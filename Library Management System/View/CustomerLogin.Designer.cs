@@ -31,9 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.TextBox();
-            this.pwd = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pwd = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -61,14 +61,6 @@
             this.username.Size = new System.Drawing.Size(295, 26);
             this.username.TabIndex = 2;
             // 
-            // pwd
-            // 
-            this.pwd.Location = new System.Drawing.Point(333, 186);
-            this.pwd.Name = "pwd";
-            this.pwd.Size = new System.Drawing.Size(295, 26);
-            this.pwd.TabIndex = 3;
-            this.pwd.TextChanged += new System.EventHandler(this.pwd_TextChanged);
-            // 
             // btnBack
             // 
             this.btnBack.Location = new System.Drawing.Point(32, 39);
@@ -89,14 +81,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pwd
+            // 
+            this.pwd.Location = new System.Drawing.Point(333, 185);
+            this.pwd.Name = "pwd";
+            this.pwd.Size = new System.Drawing.Size(295, 26);
+            this.pwd.TabIndex = 6;
+            this.pwd.UseSystemPasswordChar = true;
+            // 
             // CustomerLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pwd);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.pwd);
             this.Controls.Add(this.username);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -113,8 +114,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.TextBox pwd;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox pwd;
     }
 }

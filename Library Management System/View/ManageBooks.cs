@@ -12,7 +12,7 @@ namespace Library_Management_System
 {
     public partial class Managebooks : Form
     {
-        private BookManager bookControl = new BookManager();
+        BookManager bookControl = new BookManager();
 
         public Managebooks()
         {

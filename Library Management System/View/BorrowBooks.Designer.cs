@@ -39,7 +39,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(180, 105);
+            this.label1.Location = new System.Drawing.Point(266, 105);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 20);
             this.label1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(180, 165);
+            this.label2.Location = new System.Drawing.Point(266, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 20);
             this.label2.TabIndex = 1;
@@ -56,31 +56,32 @@
             // 
             // txtCustomerName
             // 
-            this.txtCustomerName.Location = new System.Drawing.Point(340, 98);
+            this.txtCustomerName.Location = new System.Drawing.Point(462, 99);
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(264, 26);
-            this.txtCustomerName.TabIndex = 2;
+            this.txtCustomerName.TabIndex = 7;
             // 
             // btnBorrow
             // 
-            this.btnBorrow.Location = new System.Drawing.Point(365, 256);
+            this.btnBorrow.Location = new System.Drawing.Point(411, 259);
             this.btnBorrow.Name = "btnBorrow";
             this.btnBorrow.Size = new System.Drawing.Size(179, 47);
             this.btnBorrow.TabIndex = 4;
             this.btnBorrow.Text = "Borrrow";
             this.btnBorrow.UseVisualStyleBackColor = true;
+            this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
             // 
             // cmbBookTitles
             // 
             this.cmbBookTitles.FormattingEnabled = true;
-            this.cmbBookTitles.Location = new System.Drawing.Point(340, 156);
+            this.cmbBookTitles.Location = new System.Drawing.Point(462, 157);
             this.cmbBookTitles.Name = "cmbBookTitles";
             this.cmbBookTitles.Size = new System.Drawing.Size(264, 28);
             this.cmbBookTitles.TabIndex = 5;
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(33, 13);
+            this.btnBack.Location = new System.Drawing.Point(27, 46);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(108, 51);
             this.btnBack.TabIndex = 6;
@@ -101,6 +102,7 @@
             this.Controls.Add(this.label1);
             this.Name = "BorrowBooks";
             this.Text = "BorrowBooks";
+            this.Load += new System.EventHandler(this.BorrowBooks_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

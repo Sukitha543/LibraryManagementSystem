@@ -51,6 +51,7 @@
             this.btnReserveBook.TabIndex = 1;
             this.btnReserveBook.Text = "Reserve Book";
             this.btnReserveBook.UseVisualStyleBackColor = true;
+            this.btnReserveBook.Click += new System.EventHandler(this.btnReserveBook_Click);
             // 
             // btnLogOut
             // 
@@ -66,12 +67,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(985, 450);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnReserveBook);
             this.Controls.Add(this.btnBorrow);
             this.Name = "CustomerMenu";
             this.Text = "CustomerMenu";
+            this.Load += new System.EventHandler(this.CustomerMenu_Load);
             this.ResumeLayout(false);
 
         }
